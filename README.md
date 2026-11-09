@@ -50,18 +50,6 @@ Demonstrates inheritance and access modifiers:
 ### 8. `validateAgeAsync`
 An async function returning `Promise<string>`. For ages 18 and above it resolves with `"Access Granted"` after 1 second using `setTimeout`. For ages under 18 it rejects immediately with `new Error("Access Denied: Must be 18 or older")`.
 
-## Concepts Covered
-
-| Concept | Problems |
-|---|---|
-| Optional parameters and `0` handling | 1 |
-| Union types and `typeof` narrowing | 2 |
-| Readonly tuples and destructuring | 3 |
-| Generics and rest parameters | 4 |
-| Interfaces and non-mutating array methods | 5 |
-| Generic constraints with `keyof` | 6 |
-| Classes, inheritance, `protected` and `private` | 7 |
-| Promises, `async` and `setTimeout` | 8 |
 
 ## Project Structure
 
@@ -75,7 +63,7 @@ An async function returning `Promise<string>`. For ages 18 and above it resolves
 ## Blog Posts
 
 1. [Type Aliases vs Interfaces in TypeScript](./type-vs-interface.md): the core differences between `type` and `interface`, and when to choose each
-2. [Combining Union and Intersection Types in TypeScript](./union-intersection.md): a practical example of using `|` and `&` together
+2. [Combining Union and Intersection Types in TypeScript](.//union-and-intersection.md)using `|` and `&` together
 
 ## Blog Links
 - [Blog 1](./type-vs-interface.md)
