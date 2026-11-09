@@ -1,8 +1,5 @@
 # TypeScript & OOP Assignment
 
-Solutions for **Module 4: Assignment-1 (Problem Solving with TypeScript & OOP)**.
-
-
 ## Problem Solving Summary
 
 ### 1. `multiplyValue`
@@ -48,7 +45,3 @@ An async function returning `Promise<string>`. For ages 18 and above it resolves
 
 1. [Type Aliases vs Interfaces in TypeScript](./type-vs-interface.md): the core differences between `type` and `interface`, and when to choose each
 2. [Combining Union and Intersection Types in TypeScript](.//union-and-intersection.md)using `|` and `&` together
-
-## Blog Links
-- [Blog 1](./type-vs-interface.md)
-- [Blog 2](./union-and-intersection.md)
