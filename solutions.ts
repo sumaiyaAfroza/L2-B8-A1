@@ -1,8 +1,3 @@
-function multiplyValue (value: number, multiplier: number = 2){
-   return value * multiplier
-}
-
-
 
 
 const multiplyValue = (value: number, multiplier?: number): number => {
@@ -17,34 +12,34 @@ const multiplyValue = (value: number, multiplier?: number): number => {
 
 
 
-// function processInput (value: string | number | boolean) : string | number {
-//   if(typeof value === "string") {
-//    return value.trim().toLowerCase()
-//   }
-//   else if (typeof value === "number") {
-//    return value * 10
-//   }
-//   else {
-//     return value ? "Active" :"Inactive"
-//   }
-// }
+function processInput (value: string | number | boolean) : string | number {
+  if(typeof value === "string") {
+   return value.trim().toLowerCase()
+  }
+  else if (typeof value === "number") {
+   return value * 10
+  }
+  else {
+    return value ? "Active" :"Inactive"
+  }
+}
 
 
 
-// function formatCoordinate ( coordinate : readonly [number, number, string]) : string {
-//    const  [latitude, longitude, locationName] = coordinate
-//    return `Location: ${locationName} (${latitude}, ${longitude})`
-// }
+function formatCoordinate ( coordinate : readonly [number, number, string]) : string {
+   const  [latitude, longitude, locationName] = coordinate
+   return `Location: ${locationName} (${latitude}, ${longitude})`
+}
 
 
 
-//  function concatenateArrays<T> (...arrays: T[][] ) {
-//     const combinedArray : T[] = []
-//     for (const array of arrays) {
-//        combinedArray.push(...array)
-//     }
-//      return combinedArray
-//  }
+ function concatenateArrays<T> (...arrays: T[][] ) {
+    const combinedArray : T[] = []
+    for (const array of arrays) {
+       combinedArray.push(...array)
+    }
+     return combinedArray
+ }
 
 
 
@@ -62,48 +57,34 @@ function getPopularCourses ( courses: Course[], minStudents: number) : Course[] 
 
 
 
-// function pluckValues <T, K extends keyof T>(items: T[], key: K ): T[K][]  {
-//     return items.map((item: T): T[K] => item[key])
-// }
-
-
-
-// const users = [
-//   { id: 1, name: "Rakib", role: "Admin" },
-//   { id: 2, name: "Sadia", role: "Editor" },
-//   { id: 3, name: "Tariq", role: "Subscriber" }
-// ];
+function pluckValues <T, K extends keyof T>(items: T[], key: K ): T[K][]  {
+    return items.map((item: T): T[K] => item[key])
+}
 
 
 
 
-
-// class Employee {
-//     constructor(protected name: string,  private baseSalary: number ) {
-//     }
-//     getDetails(){
-//         return  `Employee : ${this.name}, Base Salary: ${this.baseSalary}`
-//     }
-// }
-// class Manager extends Employee{
-// constructor(name: string, baseSalary: number, private department: string ) {
-//     super(name, baseSalary);
-// }
-//     getRoleInfo(){
-//     return `Manager of ${this.department}: ${this.name}`
-//     }
-// }
+class Employee {
+    constructor(protected name: string,  private baseSalary: number ) {
+    }
+    getDetails(){
+        return  `Employee : ${this.name}, Base Salary: ${this.baseSalary}`
+    }
+}
+class Manager extends Employee{
+constructor(name: string, baseSalary: number, private department: string ) {
+    super(name, baseSalary);
+}
+    getRoleInfo(){
+    return `Manager of ${this.department}: ${this.name}`
+    }
+}
 
 
 
 
 
 
-
-
-
-
-//*8======
 const validateAgeAsync = async (age: number): Promise<string> => {
   return new Promise((resolve, reject) => {
     if (age < 18) {
@@ -114,74 +95,3 @@ const validateAgeAsync = async (age: number): Promise<string> => {
   });
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@22   nicher gula kete dite hobe pbl 8 no jonno just test
-//  async function validateAgeAsync (age: number) : Promise<string> {
-//     if ( age < 18) {
-//         throw new Error("Access Denied: Must be 18 or older")
-//     }
-//     await new Promise<void>( resolve => {
-//         setTimeout( ()=> {resolve()},1000)
-//     })
-//     return "Access Granted"
-// }
-
-
-// console.log(await validateAgeAsync(20))
-
-// const runValidation = async (): Promise<void> => {
-//   try {
-//     const result: string = await validateAgeAsync(10);
-//     console.log(result);
-//   } catch (error: unknown) {
-//     if (error instanceof Error) {
-//       console.log(error.message);
-//     }
-//   }
-// };
-// void runValidation();
-// =======**************************************************
-
-
-// const runValidation = async (): Promise<void> => {
-//   const result: string = await validateAgeAsync(10);
-//   console.log(result);
-// };
-// void runValidation();
-
-
-// ====================================
-// const validateAgeAsync = async (age: number): Promise<string> => {
-//   return new Promise((resolve, reject) => {
-//     if (age < 18) {
-//       reject(new Error('Access Denied: Must be 18 or older'));
-//       return;
-//     }
-//     setTimeout(() => resolve('Access Granted'), 1000);
-//   });
-// };
-// console.log( validateAgeAsync(20))
