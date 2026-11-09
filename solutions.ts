@@ -76,24 +76,23 @@
 
 
 //* pblm - 7
-class Employee {
-    constructor(protected name: string,  private baseSalary: number ) {
-    }
-    getDetails(){
-        return  `Employee : ${this.name}, Base Salary: ${this.baseSalary}`
-    }
-}
-class Manager extends Employee{
-constructor(name: string, baseSalary: number, private department: string ) {
-    super(name, baseSalary);
-}
-    getRoleInfo(){
-    return `Manager of ${this.department}: ${this.name}`
-    }
-}
-const manager = new Manager("Alice", 50000, "Engineering");
-console.log(manager.getDetails())
-console.log(manager.getRoleInfo())
+// class Employee {
+//     constructor(protected name: string,  private baseSalary: number ) {
+//     }
+//     getDetails(){
+//         return  `Employee : ${this.name}, Base Salary: ${this.baseSalary}`
+//     }
+// }
+// class Manager extends Employee{
+// constructor(name: string, baseSalary: number, private department: string ) {
+//     super(name, baseSalary);
+// }
+//     getRoleInfo(){
+//     return `Manager of ${this.department}: ${this.name}`
+//     }
+// }
+// const manager = new Manager("Alice", 50000, "Engineering");
+
 
 
 
@@ -112,6 +111,7 @@ const validateAgeAsync = async (age: number): Promise<string> => {
     setTimeout(() => resolve('Access Granted'), 1000);
   });
 };
+
 const result = await  validateAgeAsync(10)
 console.log(result)
 
@@ -140,18 +140,18 @@ console.log(result)
 
 
 //   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@22   nicher gula kete dite hobe pbl 8 no jonno just test
-//  async function validateAgeAsync (age: number) : Promise<string> {
-//     if ( age < 18) {
-//         throw new Error("Access Denied: Must be 18 or older")
-//     }
-//     await new Promise<void>( resolve => {
-//         setTimeout( ()=> {resolve()},1000)
-//     })
-//     return "Access Granted"
-// }
+ async function validateAgeAsync (age: number) : Promise<string> {
+    if ( age < 18) {
+        throw new Error("Access Denied: Must be 18 or older")
+    }
+    await new Promise<void>( resolve => {
+        setTimeout( ()=> {resolve()},1000)
+    })
+    return "Access Granted"
+}
 
 
-// console.log(await validateAgeAsync(20))
+console.log(await validateAgeAsync(20))
 
 // const runValidation = async (): Promise<void> => {
 //   try {
