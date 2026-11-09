@@ -31,16 +31,6 @@ Demonstrates inheritance and access modifiers:
 ### 8. `validateAgeAsync`
 An async function returning `Promise<string>`. For ages 18 and above it resolves with `"Access Granted"` after 1 second using `setTimeout`. For ages under 18 it rejects immediately with `new Error("Access Denied: Must be 18 or older")`.
 
-
-## Project Structure
-
-```
-├── solutions.ts
-├── type-vs-interface.md
-├── union-intersection.md
-└── README.md
-```
-
 ## Blog Posts
 
 1. [Type Aliases vs Interfaces in TypeScript](./type-vs-interface.md): the core differences between `type` and `interface`, and when to choose each
