@@ -2,22 +2,6 @@
 
 Solutions for **Module 4: Assignment-1 (Problem Solving with TypeScript & OOP)**.
 
-## Overview
-
-This assignment assesses practical understanding of core TypeScript concepts from Modules 1, 2, and 3: basic types, optional, default and rest parameters, readonly tuples, interfaces, type narrowing, generics, Promises, and Object-Oriented Programming.
-
-It has two parts:
-
-- **Problem Solving (50 marks):** eight problems, all solved in a single file, `solutions.ts`.
-- **Blog Task (10 marks):** two technical blog posts on TypeScript topics.
-
-### Coding Standards Followed
-
-- Explicit parameter and return types on every function and class method
-- Exact function, interface, and class names as specified in the problems
-- Return values match the sample outputs exactly, including spaces, punctuation, and capitalization
-- No use of `any`
-- No `console.log` statements or sample test calls in `solutions.ts`
 
 ## Problem Solving Summary
 
